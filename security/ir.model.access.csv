@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ogame_player,ogame.player,model_ogame_player,base.group_user,1,1,1,1
+access_ogame_planet,ogame.planet,model_ogame_planet,base.group_user,1,1,1,1
+access_ogame_building,ogame.building,model_ogame_building,base.group_user,1,1,1,1
+access_ogame_buildingtype,ogame.buildingtype,model_ogame_buildingtype,base.group_user,1,1,1,1

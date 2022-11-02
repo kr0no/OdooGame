@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+    <record model="ir.actions.act_window" id="ogame.players_action_window">
+      <field name="name">Player Name</field>
+      <field name="res_model">ogame.player</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="ogame.planets_action_window">
+      <field name="name">Planet Name</field>
+      <field name="res_model">ogame.planet</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="ogame.buildingtypes_action_window">
+      <field name="name">Building Type Name</field>
+      <field name="res_model">ogame.buildingtype</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="ogame.buldings_action_window">
+      <field name="name">Building Type</field>
+      <field name="res_model">ogame.building</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem name="Ogame" id="ogame.menu_root"/>
+    <menuitem name="Players" id="ogame.players_list" parent="ogame.menu_root" action="ogame.players_action_window"/>
+    <menuitem name="Planets" id="ogame.planets_list" parent="ogame.menu_root" action="ogame.planets_action_window"/>
+    <menuitem name="Building Types" id="ogame.buildingtypes_list" parent="ogame.menu_root" action="ogame.buildingtypes_action_window"/>
+    <menuitem name="Buildings" id="ogame.buildings_list" parent="ogame.menu_root" action="ogame.buldings_action_window"/>
+  </data>
+</odoo>
